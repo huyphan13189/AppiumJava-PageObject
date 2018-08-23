@@ -12,4 +12,4 @@ Issue of test script:
 1. The test script still not handle "Date of Birth" input at all. So need to manually click "Cancel" button when datetime popup of android is displayed.
 
 Follow this video to run test script : 
-https://www.youtube.com/watch?v=Ry2o8GVuNZs&feature
+https://www.youtube.com/watch?v=Ry2o8GVuNZs
