@@ -1,0 +1,41 @@
+<html>
+<head>
+<style>
+    .container {
+        width: 100%;
+        background-color: rgb(240,240,240);
+        border: 1px solid gray;
+    }
+    .header {
+        height: 10%;
+        background-color: green;
+        text-align: center;
+        border-top: 10px solid rgb(91,173,91);
+        border-bottom: 10px solid rgb(91,173,91);
+		
+    }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="container">
+<div class="header">
+    <h1>$PROJECT_NAME - $BUILD_STATUS!</h1>
+</div>
+
+Hi All, 
+<br>
+You are receiving this email because automation test for $PROJECT_NAME was finished with status: $BUILD_STATUS
+<br>
+<br>
+<u>Changes :</u><br>
+<ul>${CHANGES, format="<li>[%a] %m</li>"}</ul>
+<br>
+<br>
+Check console output at <a href="$BUILD_URL">$BUILD_URL<a> to view the results.
+<br>
+<br>
+<br>
+</div>
+</body>
+</html>

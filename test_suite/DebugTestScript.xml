@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Test">
+	<parameter name="server" value="sauceLaps" />
+	<test name="Regression Test">
+		<groups>
+			<run>
+				<include name="GuruNewCustomer01" />
+			</run>
+		</groups>
+		<packages>
+			<package name="page.test" />
+		</packages>
+	</test>
+</suite>
