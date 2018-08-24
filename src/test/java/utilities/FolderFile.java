@@ -37,8 +37,7 @@ public class FolderFile {
 		}
 	}
 	
-	// E.g: createMutilFolder("parentFolder/childFolder")
-	// E.g: createMutilFolder("C:\\parentFolder\\childFolder\\file.txt")
+	// E.g: deleteAFile("C:\\parentFolder\\childFolder\\file.txt")
 	public static boolean deleteAFile(String filePath){
 		File file = new File(filePath);
 		if (file.exists()) {
@@ -52,8 +51,7 @@ public class FolderFile {
 		}
 	}
 	
-	// E.g: createMutilFolder("./test-reports")
-		// E.g: createMutilFolder("C:\\parentFolder\\childFolder\\file.txt")
+	// E.g: deleteAFolder("./test-reports")
 	public static boolean deleteAFolder(String path) {
 		try {
 			FileUtils.deleteDirectory(new File(path));

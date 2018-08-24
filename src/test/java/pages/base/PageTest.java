@@ -103,8 +103,14 @@ public class PageTest {
 	@BeforeSuite(alwaysRun = true)
 	protected void beforeSuite() {
 		String reportPath = "test-reports" + "/images";
-		FolderFile.createMutilFolder(reportPath);
+		
 		extent = ExtentManager.getReporter("test-reports" + "/ExtentReport.html");
+	}
+	
+	public void createReportFolder(String reportPath ) {
+		FolderFile.deleteAFolder(reportPath);
+		FolderFile.createMutilFolder(reportPath);
+		
 	}
 
 	@BeforeClass(alwaysRun = true)
